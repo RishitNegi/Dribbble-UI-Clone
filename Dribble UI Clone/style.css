@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav {
+    width: 100%;
+    height: 100px;
+    font-weight: 100;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.logo {
+    height: 74px;
+    width: auto;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    font-family: roboto;
+    font-size: 22px;
+    gap: 35px;
+}
+
+.nav1 i {
+    display: none;
+}
+
+.nav1 h6 {
+    font-weight: 500;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav2 button {
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    font-size: 15px;
+}
+
+.log {
+    font-weight: 500;
+    background-color: transparent;
+}
+.sign {
+    color: white;
+    background-color: #0d0c22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding: 15px 18px;
+    margin-left: 28px;
+}
+
+
+.content {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    background-color: #0000009f;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: blur(2px); */
+}
+
+.innernav {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.innernav a {
+    display: flex;
+    align-items: center;
+    margin: 0 3px;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #00000080;
+}
+
+.infodiv {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.content h1 {
+    margin-top: 45px;
+    font-size: 4vmax;
+    text-align: center;
+    color: white;
+}
+
+.content .cont{
+    transition: cubic-bezier(0, 1, 1, 1) .5s;
+}
+
+.content .cont:hover {
+    background-color: white;
+    color: #000;
+    opacity: 1;
+    /* transition-duration: 200ms; */
+}
+
+.content .info {
+    margin-top: 1vmax;
+    font-size: 1.3vmax;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0 320px;
+    color: white;
+    text-align: center;
+}
+
+.searchdiv {
+    width: 100%;
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchdiv input {
+    height: 10px;
+    width: 600px;
+    border-radius: 30px;
+    padding: 27px 45px 27px 55px;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    color: #0606ec;
+
+    border-color: rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: .2s;
+}
+
+.content input:hover {
+    -webkit-box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+
+.content input:focus {
+    box-shadow: none;
+    color: black;
+    outline: none;
+    -webkit-box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+
+input::placeholder {
+    color: #9e9ea7;
+}
+
+.extradiv {
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extr {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.extra {
+    margin: 0 5px;
+    padding: 6px 15px;
+    font-size: 14px;
+    border: 1px solid #9e9ea7;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+.extra:hover {
+    border: 1px solid white;
+}
+
+
+.page2 {
+    width: 100%;
+    height: auto;
+}
+
+.subnav {
+    padding: 0 72px;
+    width: 100%;
+    height: 107px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+
+
+.sub:hover {
+    border-color: rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+
+.popular button{
+    background-color: transparent;
+    border-color: rgba(0,0,0,0.1);
+    padding: 10px 10px 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter {
+    padding: 10px 16px 10px 12px;
+    background-color: transparent;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.ri-arrow-drop-down-line {
+    font-size: 20px;
+    color: #9e9ea7;   
+    margin-left: 4px;
+}
+
+.ri-filter-3-fill {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.grid {
+    margin: 32px 0px;
+    padding: 0 72px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.item {
+    width: 27.8vmax;
+}
+
+
+.contimg {
+    width: 100%;
+    aspect-ratio: 1.17;
+    
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.item .contimg:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: inherit;
+    transition: opacity .3s;
+    background: linear-gradient(180deg, transparent 62%, rgba(0,0,0,0.00345888) 63.94%, rgba(0,0,0,0.014204) 65.89%, rgba(0,0,0,0.0326639) 67.83%, rgba(0,0,0,0.0589645) 69.78%, rgba(0,0,0,0.0927099) 71.72%, rgba(0,0,0,0.132754) 73.67%, rgba(0,0,0,0.177076) 75.61%, rgba(0,0,0,0.222924) 77.56%, rgba(0,0,0,0.267246) 79.5%, rgba(0,0,0,0.30729) 81.44%, rgba(0,0,0,0.341035) 83.39%, rgba(0,0,0,0.367336) 85.33%, rgba(0,0,0,0.385796) 87.28%, rgba(0,0,0,0.396541) 89.22%, rgba(0,0,0,0.4) 91.17%);
+}
+
+.item .contimg:hover:after {
+    opacity: 1;
+}
+
+.continfo {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.review i {
+    font-size: 14px;
+    color: #9e9ea7;
+    margin: 0 4px;
+}
+
+.pfp {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.name {
+    margin-left: 8px;
+}
+
+
+.item1 .contimg {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.141)), url(https://cdn.dribbble.com/userupload/8697464/file/original-6dba26ec726163941cb95eb45efcd011.png?resize=1504x1128);
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/3825057/avatars/mini/e3d7cb6ed0671937f1a7226e2cc449f1.png?1581940719);
+}
+
+.item2 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8716607/file/original-bc4e6c2f40267719559a4cb773e58633.png?resize=450x338&vertical=center);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/393931/avatars/mini/0d261275bbf6f9a56ebb62c858fe2d87.jpg?1651568460);
+}
+
+
+.item3 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8722730/file/original-45b0168734e71691a9e116659f4b79e8.png?crop=0x0-1600x1200&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/1769954/avatars/mini/f36c405702847471e0f32a32d8feb7e6.png?1550652488);
+
+}
+
+
+.item4 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8471413/file/original-d894aa6b2b1919465b41f47e084efa93.jpg?crop=1x0-699x524&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/730703/avatars/mini/eee24de7146f290f73f64ef9373cf0a5.jpg?1536163934);
+}
+
+.item5 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8727461/file/original-61f4377cbe36e19ebdccddf101bebea1.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/699467/avatars/mini/4b000eb73d1e7c7b2a5ef42e8d55e9e5.png?1487213160);
+}
+
+.item6 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8716566/file/original-98a6fda0063982970250a3e0fdf64bfd.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 .pfp {
+    background-image: url(https://cdn.dribbble.com/userupload/8716566/file/original-98a6fda0063982970250a3e0fdf64bfd.png?resize=450x338&vertical=center);
+}
+
+.item7 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8731224/file/original-0faa0b4c94b25af2bf66cd63cdd275c2.png?crop=0x0-1601x1201&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/5976/avatars/original/av-b-at.jpg?1341240896);
+}
+
+.item8 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8731372/file/original-e3ce084d36338c779e9f7da2c49f64d1.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/7179533/avatars/mini/f422e09d77e62217dc67c457f3cf1807.jpg?1643450830);
+}
+
+.item9 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8734748/file/original-32b26b22e85d022cc14cf3297f598488.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item9 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/63407/avatars/original/avatar.png?1322676526);
+}
+
+.item10 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8726130/file/original-691d20ee5c7d71e558fc6e3fa8fded13.jpg?crop=106x79-1494x1121&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item10 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/9032824/avatars/mini/9f2b002311b88ccdbd01f2fdd5e92bef.jpg?1649218078);
+}
+
+.item11 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8728719/file/still-fd8f9bda3976ccd41953c87195e9910c.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item11 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/642793/avatars/mini/73d66133e81b3b89600c31261348a0e2.png?1496853515);
+}
+
+.item12 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8738571/file/original-66d13d3af8d559381f9e6a40953ab75e.jpg?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item12 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/2710439/avatars/mini/301c9ef303e9dc613190b06b5844e939.jpg?1557740612);
+}
+
+.item13 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8723212/file/still-cd8c6a2d5bdc03415f658ad47df6ce6e.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item13 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/4859/avatars/mini/2f1f7040c29d40f0f0db1bc595393de2.png?1580317817);
+}
+
+.item14 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8732191/file/original-3730160de67aece369deeebdc7f6ac15.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item14 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/6567474/avatars/mini/b849c692c6c9fc9cfdca178b90e354d2.png?1607746416);
+}
+
+.item15 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8731360/file/original-7b01c52aaec873100dce3d4cdc299db8.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item15 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/7179533/avatars/mini/f422e09d77e62217dc67c457f3cf1807.jpg?1643450830);
+}
+
+.item16 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8735206/file/original-f9450e40943dee2ac99f0e4e0fa3439a.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item16 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/4949363/avatars/mini/606bb85ee728fd3d78bbddf7e70b3901.jpg?1676454777);
+}
+
+.item17 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8726137/file/original-43318411da10369659600b81a10dcda6.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item17 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/699467/avatars/mini/4b000eb73d1e7c7b2a5ef42e8d55e9e5.png?1487213160);
+}
+
+.item18 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/7814771/file/original-734cbedca57c1bc8e4fdbf5980815bdf.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item18 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/1066810/avatars/mini/da0ac855f56ef746597126a5c033e2a1.png?1519916654);
+}
+
+.item19 .contimg {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.141)), url(https://cdn.dribbble.com/userupload/8697464/file/original-6dba26ec726163941cb95eb45efcd011.png?resize=1504x1128);
+    background-size: cover;
+    background-position: center;
+}
+
+.item19 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/3825057/avatars/mini/e3d7cb6ed0671937f1a7226e2cc449f1.png?1581940719);
+}
+
+.item20 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8716607/file/original-bc4e6c2f40267719559a4cb773e58633.png?resize=450x338&vertical=center);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.item20 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/393931/avatars/mini/0d261275bbf6f9a56ebb62c858fe2d87.jpg?1651568460);
+}
+
+
+.item21 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8722730/file/original-45b0168734e71691a9e116659f4b79e8.png?crop=0x0-1600x1200&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item21 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/1769954/avatars/mini/f36c405702847471e0f32a32d8feb7e6.png?1550652488);
+
+}
+
+
+.item22 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8471413/file/original-d894aa6b2b1919465b41f47e084efa93.jpg?crop=1x0-699x524&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item22 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/730703/avatars/mini/eee24de7146f290f73f64ef9373cf0a5.jpg?1536163934);
+}
+
+.item23 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8727461/file/original-61f4377cbe36e19ebdccddf101bebea1.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item23 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/699467/avatars/mini/4b000eb73d1e7c7b2a5ef42e8d55e9e5.png?1487213160);
+}
+
+.item24 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8716566/file/original-98a6fda0063982970250a3e0fdf64bfd.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item24 .pfp {
+    background-image: url(https://cdn.dribbble.com/userupload/8716566/file/original-98a6fda0063982970250a3e0fdf64bfd.png?resize=450x338&vertical=center);
+}
+
+.item25 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8731224/file/original-0faa0b4c94b25af2bf66cd63cdd275c2.png?crop=0x0-1601x1201&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item25 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/5976/avatars/original/av-b-at.jpg?1341240896);
+}
+
+.item26 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8731372/file/original-e3ce084d36338c779e9f7da2c49f64d1.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item26 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/7179533/avatars/mini/f422e09d77e62217dc67c457f3cf1807.jpg?1643450830);
+}
+
+.item27 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8734748/file/original-32b26b22e85d022cc14cf3297f598488.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item27 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/63407/avatars/original/avatar.png?1322676526);
+}
+
+.item28 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8726130/file/original-691d20ee5c7d71e558fc6e3fa8fded13.jpg?crop=106x79-1494x1121&resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item28 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/9032824/avatars/mini/9f2b002311b88ccdbd01f2fdd5e92bef.jpg?1649218078);
+}
+
+.item29 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8728719/file/still-fd8f9bda3976ccd41953c87195e9910c.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item29 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/642793/avatars/mini/73d66133e81b3b89600c31261348a0e2.png?1496853515);
+}
+
+.item30 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8738571/file/original-66d13d3af8d559381f9e6a40953ab75e.jpg?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item30 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/2710439/avatars/mini/301c9ef303e9dc613190b06b5844e939.jpg?1557740612);
+}
+
+.item31 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8723212/file/still-cd8c6a2d5bdc03415f658ad47df6ce6e.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item31 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/4859/avatars/mini/2f1f7040c29d40f0f0db1bc595393de2.png?1580317817);
+}
+
+.item32 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8732191/file/original-3730160de67aece369deeebdc7f6ac15.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item32 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/6567474/avatars/mini/b849c692c6c9fc9cfdca178b90e354d2.png?1607746416);
+}
+
+.item33 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8731360/file/original-7b01c52aaec873100dce3d4cdc299db8.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item33 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/7179533/avatars/mini/f422e09d77e62217dc67c457f3cf1807.jpg?1643450830);
+}
+
+.item34 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8735206/file/original-f9450e40943dee2ac99f0e4e0fa3439a.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item34 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/4949363/avatars/mini/606bb85ee728fd3d78bbddf7e70b3901.jpg?1676454777);
+}
+
+.item35 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/8726137/file/original-43318411da10369659600b81a10dcda6.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item35 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/699467/avatars/mini/4b000eb73d1e7c7b2a5ef42e8d55e9e5.png?1487213160);
+}
+
+.item36 .contimg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(207, 206, 206, 0.174)), url(https://cdn.dribbble.com/userupload/7814771/file/original-734cbedca57c1bc8e4fdbf5980815bdf.png?resize=450x338&vertical=center);
+    background-size: cover;
+    background-position: center;
+}
+
+.item36 .pfp {
+    background-image: url(https://cdn.dribbble.com/users/1066810/avatars/mini/da0ac855f56ef746597126a5c033e2a1.png?1519916654);
+}
+
+.continue {
+    width: 100%;
+    height: 55px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continue .sign-continue {
+    width: 248px;
+    height: 40px;
+    padding: 10px 16px;
+    margin: 0 15px ;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #ea4c89;
+}
+
+
+.continue .or-sign-in {
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    padding: 0 60px;
+}
+
+
+.directory {
+    width: 100%;
+    height: 628px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: #fafafb;
+    list-style: none;
+    padding: 0 72px;
+
+}
+
+.subdir {
+    width: 1187px;
+    height: 516px;
+    display: flex;
+    padding: 72px 0;
+    border-bottom: 1px solid #e7e7e9;
+
+}
+
+.dribbble {
+    width: 247px;
+    height: 372px;
+    line-height: 20px;
+}
+
+.dribbble img {
+    margin-bottom: 20px;
+}
+
+.dirinfo {
+    display: flex;
+}
+
+.dir {
+    width: 188px;
+    height: 372px;
+    padding-left: 50px;
+}
+
+.dribbble p {
+    margin-bottom: 30px;
+}
+
+.dribbble i {
+    font-size: 22px;
+    color: #3d3d4e;
+    margin-right: 10px;
+}
+
+.footer-lower {
+    width: 100%;
+    padding: 44px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drib {
+    display: flex;
+    align-items: center;
+}
+
+.drib img {
+    margin-left: 6px;
+}
+
+
