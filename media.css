@@ -1,0 +1,290 @@
+
+@media (max-width: 700px) {
+    * {
+        width: 100%;
+    }
+
+    .nav {
+        padding: 0 24px;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+    }
+
+
+
+    .nav1 {
+        display: flex;
+        justify-content: left;
+        gap: 0;
+    }
+
+    .logo {
+        height: 75px;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .sign {
+        width: 85px;
+        height: 50px;
+        padding: 0 2px;
+    }
+
+    .nav1 h6{
+        display: none;
+    }
+
+    .nav1 i {
+        display: block;
+        width: 20px;
+    }
+
+    .nav2 .log{
+        display: none;
+    }
+
+    .nav2 {
+        display: flex;
+        justify-content: end;
+    }
+
+    .page1 {
+        margin-top: 100px;
+        width: 100%;
+        height: 80%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .innernav {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        overflow: scroll;
+        gap: 0;
+    }
+
+    .innernav a{
+        padding: 10px 14px;
+        white-space: nowrap;
+    }
+
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content .info {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .innernav::-webkit-scrollbar {
+        display: none;
+    } 
+    
+    .searchdiv {
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 7vh;
+    }
+
+    .searchdiv input {
+        height: 1vmax;
+        width: 50vmax;
+    }
+
+
+    .extradiv p {
+        line-height: 40px;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: nowrap;
+    }
+
+    .extradiv {
+       height: auto;
+    }
+
+    .extra {
+        white-space: nowrap;
+    }
+
+    .page2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .grid {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .grid .item  {
+        width: 100%;
+    }
+
+    .subdir {
+        padding: 0;
+        width: 100%;
+    }
+
+    .dir {
+        width: 1%;
+    }
+
+    /* Page2 */
+
+    .subnav {
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+    .popular button {
+        height: 40px;
+        width: 115px;
+        padding: 10px 10px 10px 16px;
+    }
+
+    .popular i {
+        width: 16px;
+        font-size: 16px;
+    }
+
+    .filterdiv {
+        display: flex;
+        justify-content: right;
+    }
+
+    .filterdiv i {
+        width: 18px;
+    }
+
+    .filterdiv button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 40px;
+        width: 105px;
+        padding: 10px 16px 10px 12px;
+    }
+
+    .continue {
+        display: grid;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .directory {
+        width: 100%;
+        height: 130%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 50px 20px;
+    }
+
+
+    .subdir {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #e7e7e9;
+    }
+
+    .dirinfo {
+        width: 100%;
+        height: 150%;
+        margin: 20px 0;
+        display: grid;
+        flex-wrap: nowrap;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .dir {
+        height: 100%;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .dribbble {
+        width: 100%;
+        height: auto;
+        padding-right: 30%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* .dribbble p{
+        width: 100%;    
+    } */
+
+    .dribbble img {
+        width: 103px;
+    }
+
+
+    .dir {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* font-size: 12px; */
+        height: 100%;
+    }
+
+    .footer-lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        height: 10%;
+        width: 100%;
+    }
+
+    .footer-lower p{
+        text-align: center;
+    }
+
+    .footinfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .drib img {
+        width: 24px;
+        margin: 10px 0;
+    }
+
+    .drib {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+
+}
